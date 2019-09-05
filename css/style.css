@@ -1,0 +1,126 @@
+/*Grid Sections*/
+/*This defines the whole grid area */
+.container{
+	font: 15px arial, sans-serif;
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-columns: 2fr 2fr 5fr 2fr 2fr;
+	grid-template-areas: 
+		"leftCol header header header rightCol"
+		"leftCol nav main aside rightCol"
+		"leftCol footer footer footer rightCol";
+	grid-gap: .75em;
+	max-width: 1050px;
+	padding-right: auto;
+	padding-left: auto;
+}
+header{
+    grid-area: header;
+    background-color: teal;
+	background: url("../images/giphy.gif") bottom center no-repeat ;
+	min-height: 250px;
+	
+}
+nav{
+    grid-area: nav;
+    background-color: tomato;
+}
+main{
+    grid-area: main;
+    background-color: royalblue;
+	min-height: 100px;
+	text-align: center;
+}
+aside{
+    grid-area: aside;
+    background-color: orange;
+}
+footer{
+    grid-area: footer;
+    background-color: lightgreen;
+	max-height: 25px;
+}
+/*Common styles*/
+img
+{
+    max-width: 100%;
+    height: auto;
+
+}
+h1, h2
+{
+	text-align:center;
+}
+ul
+{
+	list-style-type:none;
+	
+}
+ul li
+{	display: block;
+
+}
+ul li a
+{
+	text-transform: uppercase; 
+	color: white;
+}
+ul li a:hover
+{
+	color: teal;
+	font-weight: bold;
+}
+a
+{
+	text-decoration: none;
+	color: tomato;
+}
+a:hover
+{
+	color: teal;
+}
+label {
+	display: block;
+	margin: 5px 0;
+}
+form.centre
+{
+    margin-left:auto; 
+    margin-right:auto;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+table 		
+{ 
+	
+	font-weight: bold;
+	/* border-right:1px solid #ccc;  */
+	border-bottom:1px solid #ccc; 
+	
+}
+table.centre 
+{
+    margin-left:auto; 
+    margin-right:auto;
+	padding-bottom: 10px;
+}
+table th	
+{ 
+	
+	background:#eee; 
+	padding:5px; 
+	/* border-left:1px solid #ccc;  */
+	border-top:1px solid #ccc; 
+}
+table td	
+{ 
+	color: white;
+	
+	padding:5px; 
+	/* border-left:1px solid #ccc;  */
+	border-top:1px solid #ccc; 
+}
+table td.right	
+{ 
+	text-align: right;
+}
